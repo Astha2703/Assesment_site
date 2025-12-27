@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GA4 Assessment Resource Hub</title>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4P477JVH2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-L4P477JVH2');
+    </script>
+
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 20px; background: #f4f4f4; }
+        section { background: white; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        button { background: #4285f4; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 4px; }
+        video { width: 100%; border-radius: 8px; }
+        input, textarea { width: 100%; padding: 8px; margin: 10px 0; }
+    </style>
+</head>
+<body>
+
+    <h1>Project Alpha: GA4 Assessment Site</h1>
+
+    <section>
+        <h3>Educational Video</h3>
+        <video controls onplay="gtag('event', 'video_interaction', {'video_title': 'Assessment Intro', 'action': 'play'})">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    </section>
+
+    <section>
+        <h3>Call to Action</h3>
+        <p>Click the button below to trigger a custom event.</p>
+        <button onclick="gtag('event', 'button_click', { 'button_name': 'Main CTA', 'button_color': 'blue' })">
+            Activate Analytics
+        </button>
+    </section>
+
+    <section>
+        <h3>Download Resources</h3>
+        <a href="#" onclick="gtag('event', 'file_download', { 'file_extension': 'pdf', 'file_size_kb': 1250 })">
+            Download Project Documentation (PDF)
+        </a>
+    </section>
+
+    <section>
+        <h3>Contact Us</h3>
+        <form onsubmit="gtag('event', 'form_submission', { 'form_id': 'contact_form_01', 'user_category': 'student' }); alert('Form Submitted!'); return false;">
+            <input type="text" placeholder="Your Name" required>
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+</body>
+</html>
