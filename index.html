@@ -6,6 +6,10 @@
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-KCLL8GF4');</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GA4 Assessment Resource Hub</title>
+    
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4P477JVH2"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -14,16 +18,13 @@
       gtag('config', 'G-L4P477JVH2');
     </script>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GA4 Assessment Resource Hub</title>
-
     <style>
         body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 20px; background: #f4f4f4; }
         section { background: white; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
         button { background: #4285f4; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 4px; }
         video { width: 100%; border-radius: 8px; }
         input, textarea { width: 100%; padding: 8px; margin: 10px 0; box-sizing: border-box; }
+        a { color: #4285f4; text-decoration: none; font-weight: bold; }
     </style>
 </head>
 <body>
@@ -49,7 +50,7 @@
 
     <section>
         <h3>Download Resources</h3>
-        <a href="#" onclick="gtag('event', 'file_download', { 'file_name': 'Project Documentation' }); return false;">
+        <a href="#" onclick="gtag('event', 'file_download', { 'file_extension': 'pdf', 'file_size_kb': 1250 }); return false;">
             Download Project Documentation (PDF)
         </a>
     </section>
@@ -62,5 +63,6 @@
             <button type="submit">Send Message</button>
         </form>
     </section>
+
 </body>
 </html>
